@@ -6,10 +6,7 @@ on:
       project_name:
         required: true
         type: string
-      secrets:
-        token:
-          required: false
-          type: string
+
 
 jobs:
   install-requirement:

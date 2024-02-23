@@ -24,4 +24,4 @@ jobs:
   api-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/test-demo.yml@main
+      - uses: .github/workflows/test-demo.yml@main

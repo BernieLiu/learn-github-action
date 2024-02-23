@@ -24,4 +24,6 @@ jobs:
   api-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: .github/workflows/test-demo.yml@main
+      - uses: BernieLiu/learn-github-action/.github/workflows/test-demo.yml@main
+        with:
+          project_name: "demo project"

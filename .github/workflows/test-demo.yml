@@ -8,16 +8,14 @@ on:
         type: string
       secrets:
         token:
-          required: true
+          required: False
 
 jobs:
   install-requirement:
     runs-on: ubuntu-latest
     steps:
       - name: pre-check
-        run: echo "🎉 The job was triggered by a ${{ github.event_name }}."
-      - run: echo "🐧 This job is now running on ${{ runner.os }} "
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+        run: echo "test ${{ secrets.token }} start"
 
       - name: run test
         run: echo "start running test, but nothing to run"

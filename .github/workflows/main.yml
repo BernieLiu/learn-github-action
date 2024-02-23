@@ -22,8 +22,6 @@ jobs:
         run: echo Hello, world!
 
   api-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: BernieLiu/learn-github-action/.github/workflows/test-demo.yml@main
-        with:
-          project_name: "demo project"
+    uses: BernieLiu/learn-github-action/.github/workflows/test-demo.yml@main
+    with:
+      project_name: "demo project"

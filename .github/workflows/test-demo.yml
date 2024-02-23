@@ -1,1 +1,23 @@
+name: test-api
 
+on:
+  workflow_call:
+    inputs:
+      project_name:
+        required: true
+        type: string
+      secrets:
+        token:
+          required: true
+
+jobs:
+  install-requirement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pre-check
+      - run: echo "🎉 The job was triggered by a ${{ github.event_name }}."
+      - run: echo "🐧 This job is now running on ${{ runner.os }} "
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+
+      - name: run test
+      - run: echo "start running test, but nothing to run"

@@ -9,6 +9,7 @@ on:
       secrets:
         token:
           required: False
+          type: string
 
 jobs:
   install-requirement:

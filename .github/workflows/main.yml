@@ -31,11 +31,11 @@ jobs:
 
     steps:
       - name: nothing to deploy for now
-      - run: echo deployment done
+        run: echo deployment done
 
   api-test:
     runs-on: ubuntu-latest
 
     steps:
       - name: run api test
-      - use: ./.github/workflows/test-demo.yml@main
+        use: ./.github/workflows/test-demo.yml@main
